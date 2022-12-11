@@ -3,7 +3,7 @@
 
 Adicionando dependência
 ```
-utils:
+date_utils_senuntech:
     git:
       url: https://github.com/senuntech/date_utils_senuntech.git
       ref: 1.0.0
