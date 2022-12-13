@@ -11,7 +11,7 @@ mixin DueDate {
     required int amountOfDate,
   }) {
     List<DateTime> listDate = [];
-    DateTime dateTime = dueDate;
+    DateTime dateTime = DateUtils.dateOnly(dueDate);
 
     for (var i = 0; i < amountOfDate; i++) {
       dateTime = DateUtils.addMonthsToMonthDate(dueDate, i * interval);
@@ -52,7 +52,7 @@ mixin DueDate {
     required int amountOfDate,
   }) {
     List<DateTime> listDate = [];
-    DateTime dateTime = dueDate;
+    DateTime dateTime = DateUtils.dateOnly(dueDate);
     listDate.add(dateTime);
 
     for (var i = 0; i < amountOfDate - 1; i++) {
@@ -75,7 +75,7 @@ mixin DueDate {
     required int amountOfDate,
   }) {
     List<DateTime> listDate = [];
-    DateTime dateTime = dueDate;
+    DateTime dateTime = DateUtils.dateOnly(dueDate);
     listDate.add(dateTime);
 
     for (var i = 0; i < amountOfDate - 1; i++) {
@@ -93,7 +93,7 @@ mixin DueDate {
     required int amountOfDate,
   }) {
     List<DateTime> listDate = [];
-    DateTime dateTime = dueDate;
+    DateTime dateTime = DateUtils.dateOnly(dueDate);
     listDate.add(dateTime);
 
     for (var i = 0; i < amountOfDate - 1; i++) {
