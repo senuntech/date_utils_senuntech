@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _getDates() {
     setState(() {
-      listDates = DateUtilsSenuntech.mes(
+      listDates = DateUtilsSenuntech().month(
         dueDate: DateTime(2022, 1, 5),
         interval: 1,
         amountOfDate: 10,
